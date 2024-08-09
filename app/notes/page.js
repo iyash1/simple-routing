@@ -3,14 +3,17 @@ import { useEffect, useState } from "react";
 import { services } from "../utils/services";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faNoteSticky, faBookOpen } from "@fortawesome/free-solid-svg-icons";
+import Loader from "../components/Loader";
 
 const Notes = () => {
   const [posts, setPosts] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
 
   const loadInitialData = async () => {
+    setIsLoading(true);
     const posts = await services.getPosts();
     setPosts(posts);
-    console.log(posts); // Logging after data is set
+    setIsLoading(false);
   };
 
   useEffect(() => {
@@ -18,10 +21,10 @@ const Notes = () => {
   }, []);
 
   return (
-    <div>
-      <h3 className="d-flex justify-content-center m-3">
+    !isLoading ? (<div>
+      <h3 className="fs-1 fw-bold text-center m-3">
         <FontAwesomeIcon icon={faBookOpen} className="mx-3" />
-        This is a Notes page!
+        ~ 100 Notes ~
       </h3>
       <div className="d-flex flex-wrap mx-3">
         {posts.length > 0 &&
@@ -43,7 +46,7 @@ const Notes = () => {
             </div>
           ))}
       </div>
-    </div>
+    </div>) : (<Loader />)
   );
 };
 

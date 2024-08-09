@@ -7,8 +7,9 @@ import {
 const Images = () => {
     return (
       <div className="d-flex flex-column">
-        <h3 className="align-self-center mt-3">
-          <FontAwesomeIcon icon={faPanorama} className="mx-3"/>Image Slideshow
+        <h3 className="fs-1 fw-bold text-center m-3">
+          ~ Image <FontAwesomeIcon icon={faPanorama} className="mx-3" />
+          Slideshow ~
         </h3>
         <Slideshow />
       </div>
