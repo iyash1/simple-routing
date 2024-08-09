@@ -20,15 +20,14 @@ const Notes = () => {
     loadInitialData();
   }, []);
 
-  return (
-    !isLoading ? (<div>
+  return !isLoading ? (
+    <div>
       <h3 className="fs-1 fw-bold text-center m-3">
-        <FontAwesomeIcon icon={faBookOpen} className="mx-3" />
-        ~ 100 Notes ~
+        <FontAwesomeIcon icon={faBookOpen} className="mx-3" />~ 100 Notes ~
       </h3>
       <div className="d-flex flex-wrap mx-3">
         {posts.length > 0 &&
-          posts.map((post) => (
+          posts.map((post, index) => (
             <div
               className="card text-bg-warning m-2"
               style={{ width: "18rem", cursor: "pointer" }}
@@ -38,15 +37,17 @@ const Notes = () => {
               <div className="card-body">
                 <p className="card-title">
                   <FontAwesomeIcon icon={faNoteSticky} className="mx-3" />
-                  <strong>{post.title}</strong>
+                  <strong>Note - {index+1} : {post.title}</strong>
                 </p>
                 <hr></hr>
-                <p className="card-text">{post.body}</p>
+                <p className="card-text">{post.body} </p>
               </div>
             </div>
           ))}
       </div>
-    </div>) : (<Loader />)
+    </div>
+  ) : (
+    <Loader />
   );
 };
 
