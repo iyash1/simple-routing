@@ -14,7 +14,11 @@ export default function Home() {
     <div className="d-flex flex-column m-3">
       <div className="align-self-center">
         <h3 className="fs-1 fw-bold text-center">
-          <FontAwesomeIcon icon={faLaughBeam} className="mx-3" />
+          <FontAwesomeIcon
+            icon={faLaughBeam}
+            className="mx-3"
+            style={{ color: "#FFCA33" }}
+          />
           {messages.welcome}
         </h3>
         <div className="text-center">
@@ -48,7 +52,7 @@ export default function Home() {
                 href="/notes"
                 className="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
               >
-                Notes
+                <strong>Notes</strong>
               </Link>
               {` to check some dummy notes`}
             </p>
@@ -57,7 +61,7 @@ export default function Home() {
                 href="/form"
                 className="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
               >
-                Form
+                <strong>Form</strong>
               </Link>
               {` to check a dummy form, and`}
             </p>
@@ -66,7 +70,7 @@ export default function Home() {
                 href="/images"
                 className="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
               >
-                Images
+                <strong>Images</strong>
               </Link>
               {` to check some cool images slideshow`}
             </p>
