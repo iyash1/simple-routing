@@ -47,3 +47,7 @@ export const states = [
   "Lakshadweep",
   "Puducherry",
 ];
+
+export const messages = {
+  welcome: "Welcome to my page!",
+}
