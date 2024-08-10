@@ -9,7 +9,7 @@ This site is built on Next.js 14 and Bootstrap 5 for purpose of building a examp
 3. ReactJS
 4. Git
 
-## Project Setup & 🛫 Local Launch
+## 🧭 Project Setup & 🛫 Local Launch
 1. Clone the project using `git clone` command in a directory of your choice.
 2. `cd` into the cloned repository.
 3. Run the command `npm install` or `npm i`.
