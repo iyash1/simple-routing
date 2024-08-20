@@ -30,9 +30,11 @@ export default function Home() {
             alt="Home Page Image"
           />
         </div>
+
+        <hr></hr>
+
         <div className="d-flex flex-column">
           <div className="text-center">
-            <hr></hr>
             <p className="text-center mx-5">
               This site is built on Next.js 14 and Bootstrap 5 for purpose of
               building a example page in a short time. This will be used to test
@@ -43,6 +45,7 @@ export default function Home() {
               that is expected and will be fixed in time.
             </p>
             <hr></hr>
+
             <p className="fs-4 fw-bold">
               Click on any of the following categories to browse through the
               site{" "}
