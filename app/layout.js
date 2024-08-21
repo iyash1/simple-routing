@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
         <meta
           httpEquiv="Content-Security-Policy"
           content="
-                        connect-src 'self' https://cdn.jsdelivr.net;
+                        connect-src 'self' https://cdn.jsdelivr.net https://jsonplaceholder.typicode.com;
                         style-src 'self' 'unsafe-inline';
                         img-src 'self' https://images.unsplash.com;
                         font-src 'self';
