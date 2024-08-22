@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
           content="
                         connect-src 'self' https://cdn.jsdelivr.net https://jsonplaceholder.typicode.com;
                         style-src 'self' 'unsafe-inline';
-                        img-src 'self' https://images.unsplash.com;
+                        img-src 'self' data: blob: https://images.unsplash.com;
                         font-src 'self';
                         object-src 'none';
                     "
