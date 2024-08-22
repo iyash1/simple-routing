@@ -32,7 +32,6 @@ export default async function NotesId({ params }) {
               <FontAwesomeIcon icon={faLightbulb} className="mx-3" />
               {note.title}
             </strong>
-            <hr></hr>
           </p>
           <p className="card-text">{note.body}</p>
         </div>

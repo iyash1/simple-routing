@@ -14,17 +14,17 @@ const Footer = () => {
 
                 <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
                     <li className="ms-3">
-                        <Link className="text-muted" href="https://www.x.com" target="_">
+                        <Link className="text-muted link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.x.com" target="_">
                             <FontAwesomeIcon icon={faXTwitter} />
                         </Link>
                     </li>
                     <li className="ms-3">
-                        <Link className="text-muted" href="https://www.instagram.com" target="_">
+                        <Link className="text-muted link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.instagram.com" target="_">
                             <FontAwesomeIcon icon={faInstagram} size="lg" />
                         </Link>
                     </li>
                     <li className="ms-3">
-                        <Link className="text-muted" href="https://www.facebook.com" target="_">
+                        <Link className="text-muted link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.facebook.com" target="_">
                             <FontAwesomeIcon icon={faFacebook} size="lg" />
                         </Link>
                     </li>
